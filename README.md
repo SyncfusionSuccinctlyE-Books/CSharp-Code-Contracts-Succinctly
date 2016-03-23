@@ -1,0 +1,1 @@
+Code samples for *C# Code Contracts Succinctly* by Dirk Strauss.
