@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeContractsDemo</name>
+    </assembly>
+    <members>
+        <member name="T:CodeContractsDemoProject.ERPWarehouseIntegration">
+            <summary>
+            ERP Warehouse Integration Class to manage the cutting of steel volume and available bin quantities
+            </summary>
+        </member>
+        <member name="P:CodeContractsDemoProject.ERPWarehouseIntegration.MaxBinQuantity">
+            <summary>
+            The maximum bin quantity for bins
+            </summary>
+        </member>
+        <member name="P:CodeContractsDemoProject.ERPWarehouseIntegration.CurrentBinQuantity">
+            <summary>
+            The current bin quantity available
+            </summary>
+        </member>
+        <member name="P:CodeContractsDemoProject.ERPWarehouseIntegration.CalculatedCuttingFactor">
+            <summary>
+            The new valid cutting factor calculated by ProductionVolumePerBin
+            </summary>
+        </member>
+        <member name="M:CodeContractsDemoProject.ERPWarehouseIntegration.ProductionVolumePerBin(System.Int32,System.Int32)">
+            <summary>
+            Calculate the production volume of steel per bin
+            </summary>
+            <param name="binVolume"></param>
+            <param name="factor"></param>
+            <returns>Bin Volume less Remainder</returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.ERPWarehouseIntegration.CutSteel(System.Int32,System.Int32)">
+            <summary>
+            Calculate any remainder after the modulus operation between volume and factor
+            </summary>
+            <param name="volumeToCut"></param>
+            <param name="factor"></param>
+            <returns>Remainder after cutting</returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.ERPWarehouseIntegration.CalculateNewCutFactor(System.Int32)">
+            <summary>
+            Calculate a new cutting factor 
+            r.Next(1, 7); returns a random number between 1 and 7
+            </summary>
+            <param name="binVol">Upper range value of random (bin volume + 1)</param>
+            <returns>
+            A new cutting factor greater than 1 and equal to the bin volume
+            </returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.ERPWarehouseIntegration.GetRandom(System.Int32,System.Int32)">
+            <summary>
+            Get a random number
+            </summary>
+            <param name="minValue">Value not less than 2</param>
+            <param name="maxValue">Upper range value of the random number to generate</param>
+            <returns>A random Integer</returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.ERPWarehouseIntegration.IsEven(System.Int32)">
+            <summary>
+            Ensure that the passed volume is even
+            </summary>
+            <param name="volume">The volume to verify</param>
+            <returns>boolean</returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.ERPWarehouseIntegration.BinQtyAvailable">
+            <summary>
+            Ensure that a non-negative value is returned for available bin quantity
+            </summary>
+            <returns>Available bin quantity</returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.ERPWarehouseIntegration.EnsureAllBinsFilled(System.Int32@,System.Int32,System.Int32)">
+            <summary>
+            Ensure that all bins are filled and that the steel volume does not exceed the maximum bin volume
+            </summary>
+            <param name="binOverCount"></param>
+            <param name="binVol"></param>
+            <param name="steelVol"></param>
+        </member>
+        <member name="P:CodeContractsDemoProject.DemoPurity.CutFactor">
+            <summary>
+            Property for cutting factor
+            </summary>
+        </member>
+        <member name="M:CodeContractsDemoProject.DemoPurity.#ctor(System.Int32)">
+            <summary>
+            Public Constructor
+            </summary>
+            <param name="cutFactor"></param>
+        </member>
+        <member name="M:CodeContractsDemoProject.DemoPurity.VolumeCut(System.Int32,System.Int32)">
+            <summary>
+            Calculate the volume cut
+            </summary>
+            <param name="volumeSteel"></param>
+            <param name="factorModifier"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.DemoPurity.CalculatedCutFactor(System.Int32)">
+            <summary>
+            This is not a pure method
+            </summary>
+            <param name="factorModifier"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CodeContractsDemoProject.AbbreviatorDemo.Factor">
+            <summary>
+            The factor for the cutting volume
+            </summary>
+        </member>
+        <member name="P:CodeContractsDemoProject.AbbreviatorDemo.MaxVolume">
+            <summary>
+            The maximum volume a bin can contain
+            </summary>
+        </member>
+        <member name="M:CodeContractsDemoProject.AbbreviatorDemo.FillBin(System.Int32)">
+            <summary>
+            Fill the bin with the volume of steel
+            </summary>
+            <param name="steelVolume"></param>
+        </member>
+        <member name="M:CodeContractsDemoProject.AbbreviatorDemo.PurgeBin(System.Int32)">
+            <summary>
+            Empty the bin of all steel contained
+            </summary>
+            <param name="steelVolume"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.AbbreviatorDemo.FillBinPartially(System.Int32)">
+            <summary>
+            Perform a partial bin fill
+            </summary>
+            <param name="steelVolume"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeContractsDemoProject.AbbreviatorDemo.ValidSteelAndMaxVolume(System.Int32)">
+            <summary>
+            Abbreviator Method for steel and max volume
+            </summary>
+            <param name="steelVolume"></param>
+        </member>
+        <member name="M:CodeContractsDemoProject.AbbreviatorDemo.EnsurePositiveResult">
+            <summary>
+             Abbreviator Method for successful result
+            </summary>
+        </member>
+    </members>
+</doc>

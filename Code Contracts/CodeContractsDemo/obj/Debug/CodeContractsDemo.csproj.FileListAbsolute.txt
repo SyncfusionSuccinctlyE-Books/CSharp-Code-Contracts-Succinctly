@@ -1,0 +1,17 @@
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\bin\Debug\CodeContracts\CodeContractsDemo.Contracts.dll
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\bin\Debug\CodeContracts\CodeContractsDemo.Contracts.pdb
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\bin\Debug\CodeContractsDemo.exe.config
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\bin\Debug\CodeContractsDemo.XML
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\bin\Debug\CodeContractsDemo.exe
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\bin\Debug\CodeContractsDemo.pdb
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\obj\Debug\Decl\CodeContractsDemo.exe
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\obj\Debug\Decl\CodeContractsDemo.pdb
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\obj\Debug\CodeContractsDemoccrefgen.rsp
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\obj\Debug\CodeContractsDemo.rewritten
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\obj\Debug\CodeContractsDemo.exe
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\obj\Debug\CodeContractsDemo.pdb
+C:\z\[]sc 2015\Code Contracts\CodeContractsDemo\obj\Debug\CodeContractsDemo.csprojResolveAssemblyReference.cache
+C:\z\sourcecode\Code Contracts\CodeContractsDemo\bin\Debug\CodeContractsDemo.exe.config
+C:\z\sourcecode\Code Contracts\CodeContractsDemo\bin\Debug\CodeContractsDemo.XML
+C:\z\sourcecode\Code Contracts\CodeContractsDemo\obj\Debug\CodeContractsDemo.exe
+C:\z\sourcecode\Code Contracts\CodeContractsDemo\obj\Debug\CodeContractsDemo.pdb
